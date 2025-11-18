@@ -10,7 +10,7 @@ do
     echo "########## STARTING RUN WITH SEED: $seed ##########"
     echo "#############################################"
     echo " "
-    python ../../../A_diffusion_train.py --dataset kdd --missing_rate 0.4 --enc_in 99 --c_out 99 --seed "$seed" &
+    python ../../../../A_diffusion_train.py --dataset kdd --missing_rate 0.4 --enc_in 99 --c_out 99 --seed "$seed" &
     PID=$!
     echo "--- Process started. PID: $PID ---"
     wait $PID
